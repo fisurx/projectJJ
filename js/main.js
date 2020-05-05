@@ -58,34 +58,18 @@ $(document).ready(function(){
 
         $("#posts").append(post);
        });
-       /*<article class="post">
-            <h2>Prueba de titulo</h2>
-            <span class="date">Fecha de publicacion</span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                Deleniti laborum modi earum excepturi vel ab minus eius 
-                eaque ducimus! Aut cumque quia aliquam aspernatur saepe 
-                reprehenderit tempore nam non distinctio?
-            </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                Deleniti laborum modi earum excepturi vel ab minus eius 
-                eaque ducimus! Aut cumque quia aliquam aspernatur saepe 
-                reprehenderit tempore nam non distinctio?
-            </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                Deleniti laborum modi earum excepturi vel ab minus eius 
-                eaque ducimus! Aut cumque quia aliquam aspernatur saepe 
-                reprehenderit tempore nam non distinctio?
-            </p>
-            
-            <a class="button-more">Leer mas</a>
 
-        </article>*/
-        
- 
+       var theme = $("#theme");
+       $("#to-green").click(function(){
+           theme.attr("href","css/green.css")
+       })
 
+        $("#to-red").click(function(){
+            theme.attr("href","css/red.css")
+        })
 
+        $("#to-blue").click(function(){
+            theme.attr("href","css/blue.css")
+        })
 
-    console.log(posts);
-
-    
 })

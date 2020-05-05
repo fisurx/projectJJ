@@ -1,0 +1,18 @@
+body{
+    background-image: url("../img/cielo.jpg");
+    background-attachment: fixed;
+}
+
+
+.main-logo{
+    background: rgb(80, 97, 150); 
+}
+
+#menu ul li:hover{
+    background-color: rgb(80, 97, 150);
+}
+
+
+.button-more{
+    background-color: rgb(80, 97, 150);
+}
