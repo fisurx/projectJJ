@@ -58,18 +58,32 @@ $(document).ready(function(){
 
         $("#posts").append(post);
        });
+       function themes(){
+            var theme = $("#theme");
+            
+            $("#to-green").click(function(){
+                theme.attr("href","css/green.css")
+                color = theme.attr("href","css/green.css")
+                window.localStorage.setItem("fondo", theme.attr("href"))
+            })
+    
+            $("#to-red").click(function(){
+                theme.attr("href","css/red.css")
+                color = theme.attr("href","css/red.css")
+                window.localStorage.setItem("fondo", theme.attr("href"))
+            })
+    
+            $("#to-blue").click(function(){
+                theme.attr("href","css/blue.css")
+                color = theme.attr("href","css/blue.css")
+                window.localStorage.setItem("fondo", theme.attr("href"))
+            })
 
-       var theme = $("#theme");
-       $("#to-green").click(function(){
-           theme.attr("href","css/green.css")
-       })
+            if (window.localStorage.getItem("fondo") != undefined){
+                theme.attr("href", window.localStorage.getItem("fondo"));
+            }
+       }
 
-        $("#to-red").click(function(){
-            theme.attr("href","css/red.css")
-        })
-
-        $("#to-blue").click(function(){
-            theme.attr("href","css/blue.css")
-        })
-
+      themes();
+      
 })
