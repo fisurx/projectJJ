@@ -1,0 +1,193 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+body{
+    background-image: url("../img/hojas.jpg");
+    background-attachment: fixed;
+}
+
+header{
+    margin-bottom: 2%;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+.main-container{
+    width: 65%;
+    margin: 0px auto;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 2px gray;
+}
+
+.main-logo{
+    font-family: "Verdana", "Arial";
+    font-size: 28px;
+    letter-spacing: 4px;
+    background: #235E3D;
+    color: #fafafa;
+    width: 450px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+#menu{
+    font-family: "Helvetica", "Arial";
+    background-color: #333;
+    width: 100%;
+    text-transform: uppercase;
+    margin-top: 20px;
+
+}
+
+
+#menu ul{
+    display: flex;
+    line-height: 46px;
+    justify-content: space-evenly;
+}
+
+#menu ul li{
+    height: 46px;
+    display: block;
+    color: white;
+    width: 20%;
+}
+
+#menu ul li:hover{
+    background-color: #235E3D;
+}
+
+#menu a{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+}
+
+#content{
+    padding: 1%;
+}
+
+#posts{
+    width: 60%;
+    font-family: "Helvetica", "Arial";
+
+}
+
+
+
+.post h2{
+    font-size: 30px;
+    color: #333;   
+}
+
+.post .date{
+    color: gray;
+    display: block;
+    margin: 4px 0px 4px 0px;
+}
+
+.post p{
+    margin: 10px 0px 20px 0px;
+    line-height: 22px;
+    text-align: justify;
+}
+
+.button-more{
+    display: block;
+    padding: 15px;
+    background-color: #235E3D;
+    text-decoration: none;
+    width: 70px;
+    margin: 10px 0px 10px 0px;
+    color: white;
+    text-align: center;
+}
+
+section{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+
+#sidebar{
+    font-family: "Helvetica", "Arial";
+    width: 30%;
+    float: right;
+}
+
+#sidebar h4{
+    margin-top: 50px 0px 20px 0px;
+    text-align: center;
+    line-height: 10px;
+    color: #333;
+    background: url("../img/lines.png") repeat-x;
+    margin-bottom: 15px;    
+}
+
+#sidebar span{
+    background-color: white;
+    padding: 0px 8px 0px 8px;
+}
+
+#sidebar img{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+}
+
+#sidebar p{
+    font-size: 15px;
+    text-align: justify;
+}
+
+.login{
+    margin-top: 20%;
+}
+
+
+.login input[type="text"] {
+    width: 100%;
+    height: 20px;
+    margin-bottom: 4%;
+
+}
+
+.login input[type="submit"]{
+    background-color: #eee;
+    display: block;
+    width: 50%;
+    padding: 4px 0px 4px 0px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+
+footer{
+    font-family: "Helvetica", "Arial";
+    color: white;
+    height: 47px;
+    background: rgba(51, 51, 51, 0.70);
+    margin: 0 auto;
+    width: 65%;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 47px;
+    margin-top: 20px;
+}
+
+.bx-wrap, .bx-viewport{
+    height: 250px !important;
+
+}
+    
