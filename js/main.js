@@ -85,5 +85,40 @@ $(document).ready(function(){
        }
 
       themes();
+  
       
+      //Scroll to the up side of the page
+      $(".subir").click(function(e){
+        e.preventDefault(e);
+
+        $("html, body").animate({
+            scrollTop: 0
+        }, 500); //500milisegundos
+
+        return false;
+      })
+
+     $(".login form").submit(function(){
+        var formName = $("#inputName").val();
+
+        localStorage.setItem("formName", formName);
+    });
+
+    var localName = localStorage.getItem("formName");
+
+    if(localName != null && localName != "undefined"){
+        var aboutp = $("#about p");
+
+        aboutp.html("<br><strong>Welcome, " + localName+"</strong>");
+        aboutp.append(`<a href="#" id="logout">Close session</a>`);
+
+        $(".login").hide();
+
+        $("#logout").click(function(){
+            localStorage.clear();
+            location.reload();
+        })
+    }
+
+
 })

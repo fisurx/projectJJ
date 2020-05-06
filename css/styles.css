@@ -215,3 +215,9 @@ footer{
 #to-green{
     background-color: #235E3D;
 }
+
+.swipe-up{
+    color: white;
+    text-decoration: none;
+    float: right;
+}
