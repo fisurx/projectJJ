@@ -7,8 +7,11 @@
         <link rel="stylesheet" type="text/css" href="/css/styles.css">
         <link id="theme" rel="stylesheet" type="text/css" href="/css/red.css">
         
+        
         <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+
 
         <!-- slider -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
@@ -44,28 +47,40 @@
 
                 <nav id="menu">
                     <ul>
-                        <li><a href="index.html">INICIO</a></li>
+                        <li><a>LOREM</a></li>
                         <li><a href="watch.html">RELOJ</a></li>
-                        <li><a href="contact.html">CONTACTO</a></li>
-                        <li><a href="about.html">ABOUT</a></li>
                         <li><a>CONTACTO</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="contact.html">CONTACTO</a></li>
                     </ul>
                 </nav>
             </header>
 
-                <!-- SLIDER -->
-                <div class="slider">
-                    <div class="galery">
-                        <div><img src="img/hojas.jpg"></div>
-                        <div><a href="https://facebook.com" target="_blank"><img src="img/rojo.jpg"></a></div>
-                        <div><img src="img/cielo.jpg"></div>
-                    </div>
-                </div>
-
                 <section id="content">
-                    <div id="posts">
-                        <!--CARGA DE POSTS-->
+
+                    <div class="box">
+                        <h2>Contacto</h2>
+                        <form id="form_contact" action="#">
+                            <label for="name">Nombre</label>
+                            <input type="text" name="name" id="contactName">
+
+                            <label for="affair">Asunto</label>
+                            <input type="text" name="surname" id="contactAffair">
+
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="contactEmail">
+
+                            <label for="sex">Sexo</label>
+                            <select name="sex">
+                                <option value="men">Hombre</option>
+                                <option value="woman">Mujer</option>
+                                <option value="other">Otro</option>
+                            </select>
+
+                            <input type="submit"  id="bSend" value="enviar">
+                        </form>    
                     </div>
+
                     
                     <aside id="sidebar">
                         <div id="about">
